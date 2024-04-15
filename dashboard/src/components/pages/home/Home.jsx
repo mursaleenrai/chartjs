@@ -10,7 +10,7 @@ import Stack from '@mui/material/Stack';
 import StoreIcon from '@mui/icons-material/Store';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
-
+import AccordianMain from '../../accordian/AccordianMain';
 
 const Home = () => {
     return (
@@ -96,13 +96,13 @@ const Home = () => {
                             <Grid item xs={8}>
                                 <Card sx={{ height: 60 + 'vh' }}>
                                     <CardContent>
-
                                     </CardContent>
                                 </Card>
                             </Grid>
                             <Grid item xs={4}>
                                 <Card sx={{ height: 60 + 'vh' }}>
                                     <CardContent>
+                                        <AccordianMain />
 
                                     </CardContent>
                                 </Card>
