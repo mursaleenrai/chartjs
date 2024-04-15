@@ -2,7 +2,7 @@ import React from 'react'
 import Sidebar from '../../sidebar/Sidebar'
 import { Box } from '@mui/material'
 import Appbar from '../../navbar/Appbar'
-const About = () => {
+const Team = () => {
     return (
         <>
             <Appbar />
@@ -20,4 +20,4 @@ const About = () => {
     )
 }
 
-export default About
+export default Team;

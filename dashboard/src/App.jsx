@@ -1,16 +1,19 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import Home from './components/pages/home/Home'
-import About from './components/pages/about/About'
-import Settings from './components/pages/settings/Settings'
+import Team from './components/pages/about/Team'
+import Contact from './components/pages/settings/Contact'
+import Form from './components/form/Form'
+
 function App() {
 
   return (
     <>
       <Routes>
         <Route path='/' exact element={<Home />} />
-        <Route path='/about' exact element={<About />} />
-        <Route path='/settings' exact element={<Settings />} />
+        <Route path='/team' exact element={<Team />} />
+        <Route path='/contact' exact element={<Contact />} />
+        <Route path='/form' exact element={<Form />} />
       </Routes>
     </>
   )

@@ -1,11 +1,9 @@
 import React from 'react'
-import Sidebar from '../../sidebar/Sidebar'
+import Sidebar from '../../components/sidebar/Sidebar'
 import { Box } from '@mui/material'
-import Appbar from '../../navbar/Appbar'
-
-const Settings = () => {
+import Appbar from '../../components/navbar/Appbar'
+const Form = () => {
     return (
-
         <>
             <Appbar />
             <Box height={35} />
@@ -14,11 +12,12 @@ const Settings = () => {
             }}>
                 <Sidebar />
                 <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-                    <h1>Settings</h1>
+                    <h1>About</h1>
                 </Box>
             </Box>
         </>
+
     )
 }
 
-export default Settings
+export default Form;

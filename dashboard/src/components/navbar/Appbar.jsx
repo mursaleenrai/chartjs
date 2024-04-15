@@ -178,12 +178,12 @@ export default function NavBar() {
                         <MenuIcon />
                     </IconButton>
                     <Typography
-                        variant="h6"
+                        variant="h5"
                         noWrap
                         component="div"
                         sx={{ display: { xs: 'none', sm: 'block' } }}
                     >
-                        MUI
+                        Mursaleen
                     </Typography>
                     <Search>
                         <SearchIconWrapper>

@@ -13,9 +13,13 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import Diversity3Icon from '@mui/icons-material/Diversity3';
+import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
+import ContactsIcon from '@mui/icons-material/Contacts';
 import { useNavigate } from 'react-router-dom';
 import { updateStore } from '../../appStore';
+
 
 const drawerWidth = 240;
 
@@ -101,12 +105,12 @@ export default function MiniDrawer() {
                                     justifyContent: 'center',
                                 }}
                             >
-                                <InboxIcon />
+                                <DashboardIcon />
                             </ListItemIcon>
-                            <ListItemText primary='Home' sx={{ opacity: open ? 1 : 0 }} />
+                            <ListItemText primary='Dashboard' sx={{ opacity: open ? 1 : 0 }} />
                         </ListItemButton>
                     </ListItem>
-                    <ListItem disablePadding sx={{ display: 'block' }} onClick={() => { navigate('/about') }}>
+                    <ListItem disablePadding sx={{ display: 'block' }} onClick={() => { navigate('/team') }}>
                         <ListItemButton
                             sx={{
                                 minHeight: 48,
@@ -121,12 +125,12 @@ export default function MiniDrawer() {
                                     justifyContent: 'center',
                                 }}
                             >
-                                <InboxIcon />
+                                <Diversity3Icon />
                             </ListItemIcon>
-                            <ListItemText primary='About' sx={{ opacity: open ? 1 : 0 }} />
+                            <ListItemText primary='Team' sx={{ opacity: open ? 1 : 0 }} />
                         </ListItemButton>
                     </ListItem>
-                    <ListItem disablePadding sx={{ display: 'block' }} onClick={() => { navigate('/settings') }}>
+                    <ListItem disablePadding sx={{ display: 'block' }} onClick={() => { navigate('/contact') }}>
                         <ListItemButton
                             sx={{
                                 minHeight: 48,
@@ -141,9 +145,29 @@ export default function MiniDrawer() {
                                     justifyContent: 'center',
                                 }}
                             >
-                                <InboxIcon />
+                                <ContactsIcon />
                             </ListItemIcon>
-                            <ListItemText primary='Settings' sx={{ opacity: open ? 1 : 0 }} />
+                            <ListItemText primary='Contact' sx={{ opacity: open ? 1 : 0 }} />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding sx={{ display: 'block' }} onClick={() => { navigate('/form') }}>
+                        <ListItemButton
+                            sx={{
+                                minHeight: 48,
+                                justifyContent: open ? 'initial' : 'center',
+                                px: 2.5,
+                            }}
+                        >
+                            <ListItemIcon
+                                sx={{
+                                    minWidth: 0,
+                                    mr: open ? 3 : 'auto',
+                                    justifyContent: 'center',
+                                }}
+                            >
+                                <AppRegistrationIcon />
+                            </ListItemIcon>
+                            <ListItemText primary='Form' sx={{ opacity: open ? 1 : 0 }} />
                         </ListItemButton>
                     </ListItem>
                 </List>
