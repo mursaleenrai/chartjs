@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Sidebar from '../../sidebar/Sidebar'
 import Appbar from '../../navbar/Appbar'
 import { Box } from '@mui/material'
@@ -11,8 +11,18 @@ import StoreIcon from '@mui/icons-material/Store';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import AccordianMain from '../../accordian/AccordianMain';
+import MainChart from '../../charts/MainChart';
+import { data } from '../../../data/data';
 
 const Home = () => {
+    const [userData, setUserData] = useState({
+        labels: data.map((year) => year.year),
+        datasets: [{
+            label: 'Profit',
+            data: data.map((profit) => profit.profit),
+            backgroundColor: ["#343a46", '#485364']
+        }]
+    });
     return (
         <>
             <div className='bgbd'>
@@ -95,7 +105,11 @@ const Home = () => {
                         <Grid container spacing={2}>
                             <Grid item xs={8}>
                                 <Card sx={{ height: 60 + 'vh' }}>
-                                    <CardContent>
+                                    <CardContent sx={{
+                                        maxWidth: '800px',
+                                        marginLeft: '1.5rem'
+                                    }}>
+                                        <MainChart chartData={userData} />
                                     </CardContent>
                                 </Card>
                             </Grid>

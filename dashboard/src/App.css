@@ -1,9 +1,10 @@
 :root {
-  --clr-primary: "#23272F";
-  --clr-secondary: "#374151";
+  --clr-primary: "#23272f";
+  --clr-secondary: "#485364";
 }
 .spans {
   padding: 10px;
+  background: #343a46;
 }
 .price {
   font-weight: 700;
