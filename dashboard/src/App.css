@@ -1,0 +1,25 @@
+:root {
+  --clr-primary: "#23272F";
+  --clr-secondary: "#374151";
+}
+.spans {
+  padding: 10px;
+}
+.price {
+  font-weight: 700;
+}
+.title {
+  font-size: 14px;
+}
+
+.iconss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.bgbd {
+  min-height: 100vh;
+  background: whitesmoke;
+}
