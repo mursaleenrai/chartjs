@@ -19,7 +19,10 @@ import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
 import ContactsIcon from '@mui/icons-material/Contacts';
 import { useNavigate } from 'react-router-dom';
 import { updateStore } from '../../appStore';
-
+import PieChartIcon from '@mui/icons-material/PieChart';
+import ShowChartIcon from '@mui/icons-material/ShowChart';
+import BarChartIcon from '@mui/icons-material/BarChart';
+import { Typography } from '@mui/material';
 
 const drawerWidth = 240;
 
@@ -168,6 +171,76 @@ export default function MiniDrawer() {
                                 <AppRegistrationIcon />
                             </ListItemIcon>
                             <ListItemText primary='Form' sx={{ opacity: open ? 1 : 0 }} />
+                        </ListItemButton>
+                    </ListItem>
+                    <hr />
+                    <span style={{
+                        color: 'whitesmoke',
+                        fontSize: '18px',
+                        display: 'block',
+                        fontWeight: 'bold',
+                        marginLeft: '3px',
+                        padding: '1rem 0px'
+                    }}>Charts</span>
+                    <hr />
+                    <ListItem disablePadding sx={{ display: 'block' }} onClick={() => { navigate('/pie') }}>
+                        <ListItemButton
+                            sx={{
+                                minHeight: 48,
+                                justifyContent: open ? 'initial' : 'center',
+                                px: 2.5,
+                            }}
+                        >
+                            <ListItemIcon
+                                sx={{
+                                    minWidth: 0,
+                                    mr: open ? 3 : 'auto',
+                                    justifyContent: 'center',
+                                }}
+                            >
+                                <PieChartIcon />
+                            </ListItemIcon>
+                            <ListItemText primary='Pie Chart' sx={{ opacity: open ? 1 : 0 }} />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding sx={{ display: 'block' }} onClick={() => { navigate('/line') }}>
+                        <ListItemButton
+                            sx={{
+                                minHeight: 48,
+                                justifyContent: open ? 'initial' : 'center',
+                                px: 2.5,
+                            }}
+                        >
+                            <ListItemIcon
+                                sx={{
+                                    minWidth: 0,
+                                    mr: open ? 3 : 'auto',
+                                    justifyContent: 'center',
+                                }}
+                            >
+                                <ShowChartIcon />
+                            </ListItemIcon>
+                            <ListItemText primary='Line Chart' sx={{ opacity: open ? 1 : 0 }} />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding sx={{ display: 'block' }} onClick={() => { navigate('/bar') }}>
+                        <ListItemButton
+                            sx={{
+                                minHeight: 48,
+                                justifyContent: open ? 'initial' : 'center',
+                                px: 2.5,
+                            }}
+                        >
+                            <ListItemIcon
+                                sx={{
+                                    minWidth: 0,
+                                    mr: open ? 3 : 'auto',
+                                    justifyContent: 'center',
+                                }}
+                            >
+                                <BarChartIcon />
+                            </ListItemIcon>
+                            <ListItemText primary='Bar Chart' sx={{ opacity: open ? 1 : 0 }} />
                         </ListItemButton>
                     </ListItem>
                 </List>

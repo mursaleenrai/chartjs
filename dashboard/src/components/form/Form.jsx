@@ -83,14 +83,19 @@ const Form = () => {
                             label="F Name"
                             defaultValue="Father Name"
                         />
-                        <div style={{
-                            display: 'flex',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                        }}><Button variant='contained'>Sign up</Button></div>
+                    </Box>
+                    <Box sx={{
+                        marginTop: '3rem',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center'
+                    }}>
+                        <Button sx={{
+                            width: "61vw",
+                        }} variant='contained'>Sign up</Button>
                     </Box>
                 </Box>
-            </Box>
+            </Box >
         </>
 
     )
