@@ -23,18 +23,31 @@ const columns = [
         width: 160,
         valueGetter: (value, row) => `${row.firstName || ''} ${row.lastName || ''}`,
     },
+    {
+        field: 'position',
+        headerName: 'Position',
+        width: 160,
+
+    },
+    {
+        field: 'experience',
+        headerName: 'Experience',
+        width: 160,
+    },
 ];
 
 const rows = [
-    { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 },
-    { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },
-    { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45 },
-    { id: 4, lastName: 'Stark', firstName: 'Arya', age: 16 },
-    { id: 5, lastName: 'Targaryen', firstName: 'Daenerys', age: null },
-    { id: 6, lastName: 'Melisandre', firstName: null, age: 150 },
-    { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44 },
-    { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 },
-    { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
+    { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35, position: 'React Developer', experience: '3 Years' },
+    { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42, position: 'Node Developer', experience: '5 Years' },
+    { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45, position: 'React Developer', experience: '3 Years' },
+    { id: 4, lastName: 'Stark', firstName: 'Arya', age: 16, position: 'JS Developer', experience: '1 Years' },
+    { id: 5, lastName: 'Targaryen', firstName: 'Daenerys', age: null, position: 'React Developer', experience: '3 Years' },
+    { id: 6, lastName: 'Melisandre', firstName: null, age: 150, position: 'React Developer', experience: '3 Years' },
+    { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44, position: 'React Developer', experience: '3 Years' },
+    { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36, position: 'Python Developer', experience: '3 Years' },
+    { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65, position: 'Angular Developer', experience: '3 Years' },
+    { id: 10, lastName: 'Roxie', firstName: 'Harvey', age: 65, position: 'Angular Developer', experience: '3 Years' },
+    { id: 11, lastName: 'Roxie', firstName: 'Harvey', age: 65, position: 'Angular Developer', experience: '3 Years' },
 ];
 
 const Team = () => {
@@ -54,7 +67,7 @@ const Team = () => {
                             columns={columns}
                             initialState={{
                                 pagination: {
-                                    paginationModel: { page: 0, pageSize: 5 },
+                                    paginationModel: { page: 0, pageSize: 9 },
                                 },
                             }}
                             pageSizeOptions={[5, 10]}
