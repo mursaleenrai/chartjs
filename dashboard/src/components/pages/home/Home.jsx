@@ -20,7 +20,7 @@ const Home = () => {
         datasets: [{
             label: 'Profit',
             data: data.map((profit) => profit.profit),
-            backgroundColor: ["#343a46", '#485364']
+            backgroundColor: ["#3d485a"]
         }]
     });
     return (

@@ -5,7 +5,8 @@ import { Bar, Line } from 'react-chartjs-2'
 const MainChart = ({ chartData }) => {
     return (
         <div>
-            <Line data={chartData} />
+            {/* <Line data={chartData} /> */}
+            <Bar data={chartData} />
 
         </div>
     )

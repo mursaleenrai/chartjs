@@ -12,7 +12,7 @@ const Form = () => {
             }}>
                 <Sidebar />
                 <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-                    <h1>About</h1>
+                    <h1>Form</h1>
                 </Box>
             </Box>
         </>
