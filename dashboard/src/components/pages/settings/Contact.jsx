@@ -5,9 +5,9 @@ import Appbar from '../../navbar/Appbar'
 import { DataGrid } from '@mui/x-data-grid';
 
 const columns = [
-    { field: 'id', headerName: 'ID', width: 70 },
-    { field: 'firstName', headerName: 'First name', width: 130 },
-    { field: 'lastName', headerName: 'Last name', width: 130 },
+    { field: 'id', headerName: 'ID', width: 70, background: '#23272f', color: 'white' },
+    { field: 'firstName', headerName: 'First name', width: 130, background: '#23272f', color: 'white' },
+    { field: 'lastName', headerName: 'Last name', width: 130, background: '#23272f', color: 'white' },
     {
         field: 'age',
         headerName: 'Age',
@@ -44,6 +44,10 @@ const rows = [
     { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44, email: 'raimursaleen14@gmail.com', location: 'USA' },
     { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36, email: 'raimursaleen14@gmail.com', location: 'USA' },
     { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65, email: 'raimursaleen14@gmail.com', location: 'USA' },
+    { id: 10, lastName: 'Roxie', firstName: 'Harvey', age: 65, email: 'raimursaleen14@gmail.com', location: 'USA' },
+    { id: 11, lastName: 'Roxie', firstName: 'Harvey', age: 65, email: 'raimursaleen14@gmail.com', location: 'USA' },
+    { id: 12, lastName: 'Roxie', firstName: 'Harvey', age: 65, email: 'raimursaleen14@gmail.com', location: 'USA' },
+    { id: 13, lastName: 'Roxie', firstName: 'Harvey', age: 65, email: 'raimursaleen14@gmail.com', location: 'USA' },
 ];
 
 const Contact = () => {
@@ -54,16 +58,19 @@ const Contact = () => {
             <Box sx={{
                 display: 'flex',
 
+
             }}>
                 <Sidebar />
-                <Box component="main" sx={{ flexGrow: 1, p: 3, }}>
-                    <div style={{ height: 600, width: '100%', }} >
+                <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+                    <div style={{ height: 600, width: '100%', marginTop: '1rem' }}  >
+
                         <DataGrid
+
                             rows={rows}
                             columns={columns}
                             initialState={{
                                 pagination: {
-                                    paginationModel: { page: 0, pageSize: 5 },
+                                    paginationModel: { page: 0, pageSize: 13 },
                                 },
                             }}
                             pageSizeOptions={[5, 10]}

@@ -48,7 +48,7 @@ const Team = () => {
             }}>
                 <Sidebar />
                 <Box component="main" sx={{ flexGrow: 1, p: 3, }}>
-                    <div style={{ height: 600, width: '100%', }} >
+                    <div style={{ height: 600, width: '100%', marginTop: '1rem' }} >
                         <DataGrid
                             rows={rows}
                             columns={columns}
