@@ -24,7 +24,7 @@ const Form = () => {
                     <Box sx={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
 
                         <TextField sx={{
-                            width: '30vw'
+                            width: '35vw'
                         }}
                             required
                             id="outlined-required"
@@ -32,7 +32,7 @@ const Form = () => {
                             defaultValue="Name"
                         />
                         <TextField sx={{
-                            width: '30vw',
+                            width: '35vw',
                             outlineColor: "#23272f"
                         }}
                             required
@@ -46,7 +46,7 @@ const Form = () => {
 
                         <TextField
                             sx={{
-                                width: '30vw',
+                                width: '35vw',
                                 outlineColor: "#23272f"
                             }}
                             id="outlined-password-input"
@@ -55,7 +55,7 @@ const Form = () => {
                             autoComplete="current-password"
                         />
                         <TextField sx={{
-                            width: '30vw',
+                            width: '35vw',
                             outlineColor: "#23272f"
                         }}
                             required
@@ -67,7 +67,7 @@ const Form = () => {
                     <Box sx={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: '2rem' }}>
 
                         <TextField sx={{
-                            width: '30vw'
+                            width: '35vw'
                         }}
                             required
                             id="outlined-required"
@@ -75,8 +75,9 @@ const Form = () => {
                             defaultValue="Name"
                         />
                         <TextField sx={{
-                            width: '30vw',
-                            outlineColor: "#23272f"
+                            width: '35vw',
+                            outlineColor: "#23272f",
+
                         }}
                             required
                             id="outlined-required"
@@ -91,7 +92,8 @@ const Form = () => {
                         alignItems: 'center'
                     }}>
                         <Button sx={{
-                            width: "61vw",
+                            width: "71vw",
+                            background: "#485364"
                         }} variant='contained'>Sign up</Button>
                     </Box>
                 </Box>
